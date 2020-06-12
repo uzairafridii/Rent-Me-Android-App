@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/itemsCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_8"
+        android:layout_marginLeft="@dimen/margin_16"
+        android:layout_marginRight="@dimen/margin_8"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardCornerRadius="@dimen/margin_8"
+        app:cardElevation="@dimen/margin_8"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_8"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/roomNumberOwner"
+                android:text="Room or Flat Number:"
+                android:textColor="@color/text_color"
+                android:layout_marginTop="@dimen/margin_4"
+                android:layout_marginLeft="@dimen/margin_8"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/roomQunatityOwner"
+                android:text="1"
+                android:textColor="@color/text_color"
+                android:layout_marginTop="@dimen/margin_4"
+                android:layout_marginLeft="@dimen/margin_8"
+                app:layout_constraintLeft_toRightOf="@+id/roomNumberOwner"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hostelNameOwner"
+                android:text="Hostel or Flat Name:"
+                android:textColor="@color/text_color"
+                android:layout_marginTop="@dimen/margin_4"
+                android:layout_marginLeft="@dimen/margin_8"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/roomNumberOwner"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hostelNameValueInOwner"
+                android:text="vision2 hostel blook"
+                android:textColor="@color/text_color"
+                android:layout_marginTop="@dimen/margin_4"
+                android:layout_marginLeft="@dimen/margin_8"
+                app:layout_constraintLeft_toRightOf="@+id/hostelNameOwner"
+                app:layout_constraintTop_toBottomOf="@id/roomQunatityOwner"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/categoryInOwner"
+                android:text="Room For Males"
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_marginTop="@dimen/margin_4"
+                android:layout_marginLeft="@dimen/margin_8"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/hostelNameValueInOwner"
+                />
+
+           <!-- <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/moreBtn"
+                android:src="@drawable/ic_more_vert_black_24dp"
+                android:background="@null"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_marginTop="@dimen/margin_4"
+                android:layout_marginRight="@dimen/margin_4"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />-->
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                app:layout_constraintTop_toBottomOf="@id/categoryInOwner"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

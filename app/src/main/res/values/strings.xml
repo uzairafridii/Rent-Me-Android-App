@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">RentMe</string>
+    <string name="signup"><u>SignUp</u></string>
+    <string name="share_app">Share App</string>
+</resources>
